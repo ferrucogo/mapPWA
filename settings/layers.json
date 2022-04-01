@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Temperatura 2m (GFS)",
+    "active": true,
+    "url": "http://188.166.63.249/thredds/wms/SINDBAD-GFS-1HR/SINDBAD-GFS-Temperature_height_above_ground.nc?",
+    "opacity": 0.7,
+    "type": "wms",
+    "legend": {
+      "min": 0,
+      "max": 50,
+      "name": "x-rainbow",
+      "unit": "c"
+    },
+    "options": {
+      "layers": "Temperature_height_above_ground",
+      "format": "image/png",
+      "transparent": true,
+      "tiled": true,
+      "styles": "boxfill/rainbow",
+      "colorscalerange": "263.15,313.15",
+      "unit": "K",
+      "logscale": false,
+      "abovemaxcolor": "extend",
+      "belowmincolor": "extend"
+    }
+  },
+  {
+    "name": "Cloud Cover (10Km)",
+    "active": false,
+    "url": "http://188.166.63.249/thredds/wms/grib/SINDBAD-FAT?",
+    "opacity": 0.7,
+    "type": "wms",
+    "legend": {
+      "min": 0,
+      "max": 100,
+      "name": "grayscale",
+      "unit": "%"
+    },
+    "options": {
+      "layers": "Total_cloud_cover_surface_layer",
+      "format": "image/png",
+      "transparent": true,
+      "tiled": true,
+      "styles": "boxfill/greyscale",
+      "colorscalerange": "0.001,100",
+      "logscale": false,
+      "abovemaxcolor": "extend",
+      "belowmincolor": "extend"
+    }
+  }
+]
+
